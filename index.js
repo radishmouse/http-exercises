@@ -2,6 +2,7 @@ const http = require('http');
 const fs = require('fs');
 
 const blog = require('./blog');
+const contacts = require('./contacts');
 
 const header = fs.readFileSync('templates/header.html');
 const nav = fs.readFileSync('templates/nav.html');
@@ -16,6 +17,8 @@ const server = http.createServer((req, res) => {
 
     if (req.url === '/blog') {
         content = blog.getContent();
+    } else if (req.url === '/contact') {
+        content = contacts.getContacts();
     }
 
     res.end(header + nav + content + footer);

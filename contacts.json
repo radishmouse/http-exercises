@@ -1,0 +1,19 @@
+{
+    "contacts": [
+        {
+            "name": "Oakley",
+            "phone": "867-5309",
+            "email": "oakley@oakley-the-cat.com"
+        },
+        {
+            "name": "Milla",
+            "phone": "867-5310",
+            "email": "milla@oakley-the-cat.com"
+        },
+        {
+            "name": "Chris",
+            "phone": "867-5311",
+            "email": "chris@oakley-the-cat.com"
+        }
+    ]
+}
